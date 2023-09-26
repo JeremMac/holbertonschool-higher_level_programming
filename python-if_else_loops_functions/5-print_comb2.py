@@ -2,4 +2,4 @@
 for i in range(0, 99):
     print("{}, ".format(i), end="")
     if (i == 98):
-        print("99\n")
+        print("99")
