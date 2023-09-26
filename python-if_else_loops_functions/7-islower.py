@@ -4,4 +4,4 @@ def islower(c):
         if (c == chr(i) and i >= 97 and i < 123):
             return (True)
         elif (c == chr(i) and i < 97 and i > 123):
-            return(False)
+            return (False)
