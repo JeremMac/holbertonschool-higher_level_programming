@@ -11,7 +11,7 @@ else:
     last_digit = number % 10
 
 if(last_digit == 0):
-    print(f"Last digit of {number} is {last_digit} {zero}")
+    print(f'Last digit of {number} is {last_digit} {zero}')
 elif(last_digit > 5):
     print(f"Last digit of {number} is {last_digit} {greater}")
 else:
