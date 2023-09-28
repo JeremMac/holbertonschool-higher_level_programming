@@ -7,9 +7,9 @@ if (length < 1):
     print("{} arguments.".format(length))
 elif (length == 1):
     print("{} argument:".format(length))
-    print(length, arg[1])
+    print("{}: {}".format(length, arg[1]))
 else:
     print("{} arguments:".format(length))
     while (i <= length):
-        print(i, ':', arg[i])
+        print("{}: {}".format(i, arg[i]))
         i += 1
