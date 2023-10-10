@@ -1,10 +1,13 @@
 #!/usr/bin/python3
+"""a module that defines add_integer function"""
+
+
 def add_integer(a, b=98):
     """a function that adds two integers"""
 
     if isinstance(a, float) is True:
         a = int(a)
-    if  isinstance(b, float) is True:
+    if isinstance(b, float) is True:
         b = int(b)
     if isinstance(a, int) is False:
         raise TypeError("a must be an integer")
