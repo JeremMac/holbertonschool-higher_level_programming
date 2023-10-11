@@ -4,7 +4,7 @@
 
 def add_integer(a, b=98):
     """a function that adds two integers
-    
+
     returns the sum of two integers
 
     raises:
