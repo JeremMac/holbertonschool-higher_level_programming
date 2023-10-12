@@ -36,5 +36,6 @@ TypeError: text must be a string
 Traceback (most recent call last):
 TypeError: text must be a string
 
->>> text_indentation("text")
-text
+>>> text_indentation("text)
+Traceback (most recent call last):
+SyntaxError: unterminated string literal (detected at line 1)
