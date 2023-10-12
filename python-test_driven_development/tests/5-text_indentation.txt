@@ -31,3 +31,7 @@ NameError: name 'amkd' is not defined
 >>> text_indentation(("mary","poppins"))
 Traceback (most recent call last):
 TypeError: text must be a string
+
+>>> text_indentation({"mary", "poppins"})
+Traceback (most recent call last):
+TypeError: text must be a string
