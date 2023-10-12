@@ -21,3 +21,13 @@ TypeError: text_indentation() takes 1 positional argument but 2 were given
 >>> text_indentation(None)
 Traceback (most recent call last):
 TypeError: text must be a string
+
+>>> text_indentation("")
+
+>>> text_indentation(amkd)
+Traceback (most recent call last):
+NameError: name 'amkd' is not defined
+
+>>> text_indentation(("mary","poppins"))
+Traceback (most recent call last):
+TypeError: text must be a string
