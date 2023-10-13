@@ -3,7 +3,15 @@
 
 
 class Square:
-    """a class with the size of a square"""
+    """A class that create a square.
+
+    return nothing
+
+    Raises:
+        TypeError: if size or position is not an int.
+        TypeError: if position is not a tuple.
+        ValueError: if size < 0
+    """
     def __init__(self, size=0, position=(0, 0)):
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
