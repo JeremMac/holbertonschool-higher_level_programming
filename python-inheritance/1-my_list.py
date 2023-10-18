@@ -3,9 +3,8 @@
 
 
 class MyList(list):
-    '''a class with that inherits a given list.
-    method: print_sorted a function that
-    prints a list in sorted order.
-    '''
+    """Implements sorted printing for the built-in list class."""
+
     def print_sorted(self):
+        """Print a list in sorted ascending order."""
         print(sorted(self))
