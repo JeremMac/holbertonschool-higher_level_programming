@@ -8,7 +8,7 @@ def load_from_json_file(filename):
 
     args:
         filename: the json file we will build the object from.
-    
+
     returns: the created object.
     '''
 
