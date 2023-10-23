@@ -93,3 +93,8 @@ class Rectangle(Base):
         a method that returns the area of a rectangle.
         '''
         return self.__width * self.__height
+
+    def display(self):
+        '''A method to print a rectangle.'''
+        for _ in range(self.__height):
+            print("#" * self.__width)
