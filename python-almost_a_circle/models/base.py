@@ -28,7 +28,8 @@ class Base:
         '''A method that that returns the JSON
         string representation of a dictionary'''
 
-        if not list_dictionaries or\
-                len(list_dictionaries) == 0:
+        if not list_dictionaries:
+            return "[]"
+        if len(list_dictionaries) == 0:
             return "[]"
         return json.dumps(list_dictionaries)
