@@ -124,6 +124,9 @@ class Rectangle(Base):
                 setattr(self, key, value)
 
     def to_dictionary(self):
+        '''A method that return a dictionnary
+        of all instances of the class.
+        '''
         new_dict = {
             "id": self.id,
             "width": self.__width,
