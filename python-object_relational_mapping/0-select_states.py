@@ -8,6 +8,10 @@ import sys
 
 if __name__ == "__main__":
 
+    if len(sys.argv) != 4:
+        print("Usage: {} <username> <password> <database>".format(sys.argv[0]))
+        sys.exit(1)
+
     database = MySQLdb.connect(
         host="localhost",
         port=3306,
@@ -20,8 +24,8 @@ if __name__ == "__main__":
 
     cursor.execute("SELECT * FROM states ORDER BY states.id")
 
-for row in cursor.fetchall():
-    print(row)
+    for row in cursor.fetchall():
+        print(row)
 
-cursor.close()
-database.close()
+    cursor.close()
+    database.close()
