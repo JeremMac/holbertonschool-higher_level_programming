@@ -6,19 +6,19 @@ all states from the database hbtn_0e_0_usa.
 '''
 
 import MySQLdb
-from sys import argv
+import sys
 
 if __name__ == "__main__":
 
-    if len(argv) != 4:
+    if len(sys.argv) != 4:
         print("error")
         exit(1)
 
     conn = MySQLdb.connect(
         host="localhost",
-        user=argv[1],
-        passwd=argv[2],
-        database=argv[3],
+        user=sys.argv[1],
+        passwd=sys.argv[2],
+        database=sys.argv[3],
         port=3306
     )
 
