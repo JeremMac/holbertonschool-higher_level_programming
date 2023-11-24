@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-A module that contains a script that lists
-all states from the database hbtn_0e_0_usa.
+Module that list all states from a database.
 """
 
 import MySQLdb
