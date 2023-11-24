@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 
-'''
-A module that contains a script that lists
-all states from the database hbtn_0e_0_usa.
-'''
+'''A module that contains a script that lists
+all states from the database hbtn_0e_0_usa.'''
 
 import MySQLdb
 import sys
@@ -11,7 +9,6 @@ import sys
 if __name__ == "__main__":
 
     if len(sys.argv) != 4:
-        print("error")
         sys.exit(1)
 
     conn = MySQLdb.connect(
@@ -23,10 +20,11 @@ if __name__ == "__main__":
     )
 
     cursor = conn.cursor()
+
     cursor.execute("SELECT * FROM states ORDER BY states.id")
 
-for i in cursor.fetchall():
-    print(i)
+for row in cursor.fetchall():
+    print(row)
 
 cursor.close()
 conn.close()
